@@ -14,6 +14,6 @@
 ## To-Do
 
 - [x] Translate design system to TailwindCSS config
-- [ ] Add assets, `data.json`
+- [x] Add assets, `data.json`
 - [ ] Add Rubik font, replace existing fonts, change basic metadata
 
