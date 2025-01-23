@@ -18,6 +18,10 @@ export default async function Home() {
   return (
     <>
       <header></header>
+      <div
+        aria-hidden="true"
+        className="z-1 absolute top-0 h-screen w-screen bg-background-pattern bg-no-repeat"
+      ></div>
       <main className="relative z-0 mx-6 mt-8">
         <h1 className="mb-4 text-[clamp(2.5rem,5vw+1rem,4rem)] font-thin">
           Welcome to the{" "}

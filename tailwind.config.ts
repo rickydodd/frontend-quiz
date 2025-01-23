@@ -9,6 +9,9 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    backgroundImage: {
+      "background-pattern": "var(--background-pattern)",
+    },
     colors: {
       background: "var(--background)",
       foreground: "var(--foreground)",

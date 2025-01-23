@@ -5,6 +5,7 @@
 :root {
   --background: #f4f6fa;
   --foreground: #313e51;
+  --background-pattern: url("../../public/assets/images/pattern-background-mobile-light.svg");
   --option: #fff;
   --subtitle: #626c7f;
 }
@@ -13,6 +14,7 @@
   :root {
     --background: #313e51;
     --foreground: #fff;
+    --background-pattern: url("../../public/assets/images/pattern-background-mobile-dark.svg");
     --option: #3b4d66;
     --subtitle: #abc1e1;
   }
