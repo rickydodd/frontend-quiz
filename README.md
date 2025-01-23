@@ -27,3 +27,12 @@ I instead opted for having a fallback background colour for icons, but extractin
 
 If the data contained in `data.json` were retrieved from an external API, and thus I had no control over what it contained, then an alternative would be creating a parity internal API that would associate an icon with an icon background colour.
 
+### Background Image
+
+#### The Problem
+
+While it seems like the background used in the mobile design is achievable with purely CSS, the tablet design and desktop design seem like they will require rotating an element.
+
+#### My Solution
+
+I decided that the solution is adding two absolutely positioned elements in the HTML. Due to these being purely decorative, for accessibility purposes they should be hidden from the accessibility tree. Just one of the elements will be sufficient for the mobile and tablet designs, while the desktop design will require both elements.
