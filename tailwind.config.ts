@@ -28,6 +28,7 @@ export default {
       "purple": "#a729f5",
       "red": "#ee5454",
       "white": colors.white,
+      "transparent": colors.transparent,
     },
     fontSize: {
       "xs": ["0.85rem", {
