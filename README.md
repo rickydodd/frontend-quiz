@@ -36,3 +36,14 @@ While it seems like the background used in the mobile design is achievable with 
 #### My Solution
 
 I decided that the solution is adding two absolutely positioned elements in the HTML. Due to these being purely decorative, for accessibility purposes they should be hidden from the accessibility tree. Just one of the elements will be sufficient for the mobile and tablet designs, while the desktop design will require both elements.
+
+### Progress Bars
+
+#### The Problem
+
+Support for browser-native progress bars seems extremely scattered.
+
+#### My Solution
+
+My own implementation of a progress bar that makes use of aria tools. I created a progress bar component.
+
