@@ -47,3 +47,12 @@ Support for browser-native progress bars seems extremely scattered.
 
 My own implementation of a progress bar that makes use of aria tools. I created a progress bar component.
 
+### Generating the Slug
+
+#### The Problem
+
+As dynamic routing will be required to generate the pages from the local data file, slugs need to be generated.
+
+#### My Solution
+
+I chose to use the title as the slug. To do so, I chose simply to make the title lowercase and that is it. Depending on future data, this would be insufficient for generating slugs. For example, say we want to extend the quiz to front-end and back-end matters, and we want to add a quiz for React Query. Well, making it lowercase results in `react query`, with a space. A string containing a space is not a valid slug.
