@@ -17,7 +17,7 @@ export default async function Home() {
 
   return (
     <>
-      <header></header>
+      <header className="min-h-[4.5rem]"></header>
       <div
         aria-hidden="true"
         className="z-1 absolute top-0 h-screen w-screen bg-background-pattern bg-no-repeat"
