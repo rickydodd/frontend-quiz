@@ -53,6 +53,18 @@ All of the following screenshots are using the dark mode implementation of my we
 
 ## Introspection
 
+### The Biggest Challenge (so far)
+
+The biggest challenge so far has been ambiguity.
+
+When developing a real product, there is typically a number of stakeholders with which to communicate with. This ability to communicate with stakeholders reduces, or otherwise eliminates, many ambiguities.
+
+The lack of ability to communicate with stakeholders led me to inject some additional data into the raw JSON file. But changing an end-point is typically not feasible or practical, either because mutating an API on a whim is a bad idea or because I would not have access to the API I was consuming.
+
+If I knew I could not change the API this application was consuming, and if I knew the API I was consuming was considered stable (versioned), then the approach I would have taken is creating a parity API. The parity API would call the consumed API, inject the data I required, and then send that data as the payload. I could then consume this new API I constructed.
+
+The actual act of editing the raw JSON file was easy, but these considerations were ones that I spent a considerable amount of time mulling over, so I feel like ambiguity posed the greatest challenge that I have faced with this project (so far).
+
 ### Changes to the `data.json` File
 
 #### The Problem
