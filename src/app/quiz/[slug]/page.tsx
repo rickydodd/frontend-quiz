@@ -1,4 +1,5 @@
 import { promises as fs } from "fs";
+import path from "path";
 import { notFound } from "next/navigation";
 
 import { Quiz } from "@/app/types";
@@ -9,7 +10,10 @@ export default async function Page({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const file = await fs.readFile(process.cwd() + "/src/app/data.json", "utf8");
+  const file = await fs.readFile(
+    path.join(process.cwd(), "src/app/data.json"),
+    "utf8",
+  );
   const data = JSON.parse(file);
   const slug = (await params).slug;
 
