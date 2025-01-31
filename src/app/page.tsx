@@ -24,7 +24,7 @@ export default async function Home() {
         <nav className="mt-10 font-medium" aria-label="Quiz subjects">
           {data.quizzes.map((quiz: Quiz) => (
             <a
-              href={`/${quiz.title.toLowerCase()}`}
+              href={`/quiz/${quiz.title.toLowerCase()}`}
               key={quiz.title}
               className="mt-3 flex items-center gap-4 rounded-2xl bg-option px-3 py-2"
             >
