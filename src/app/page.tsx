@@ -1,15 +1,6 @@
 import { promises as fs } from "fs";
 
-type Quiz = {
-  title: string;
-  icon: string;
-  color: string;
-  questions: {
-    question: string;
-    options: string[];
-    answer: string;
-  }[];
-};
+import { Quiz } from "@/app/types";
 
 export default async function Home() {
   const file = await fs.readFile(process.cwd() + "/src/app/data.json", "utf8");
