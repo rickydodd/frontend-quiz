@@ -11,6 +11,44 @@
 - Image assets
 - JSON data file (the questions and answers for the quiz)
 
+## Current State of Frontend Quiz
+
+### Mobile View Screenshots
+
+All of the following screenshots are using the dark mode implementation of my web application. While I have not yet added a toggle for light mode and dark mode, the current implementation of my web application does have both distinct modes implemented and uses the browser set mode.
+
+<details>
+<summary>Home Screen</summary>
+<img src="./assets/home_mobile.png" alt="Mobile view of home screen implementation" />
+</details>
+
+<details>
+<summary>Quiz (No Option Selected, but Attempted to Submit)</summary>
+<img src="./assets/quiz_no_option_selected.png" alt="Mobile view of quiz screen implementation with no answer selected and an attempt to submit no answer">
+</details>
+
+<details>
+<summary>Quiz (Correct Answer Submitted)</summary>
+<img src="./assets/quiz_correct_answer_mobile.png" alt="Mobile view of quiz screen implementation with correct answer selected">
+</details>
+
+<details>
+<summary>Quiz (Incorrect Answer Submitted)</summary>
+<img src="./assets/quiz_incorrect_answer_mobile.png" alt="Mobile view of quiz screen implementation with incorrect answer selected">
+</details>
+
+<details>
+<summary>Quiz Complete Screen</summary>
+<img src="./assets/quiz_complete_mobile.png" alt="Mobile view of quiz completion screen, with a score of 9 out of 10 in the HTML quiz category">
+</details>
+
+### State Checklist
+
+- [x] Fully functional.
+- [x] Mobile style implementation.
+- [ ] Tablet style implementation.
+- [ ] Desktop style implementation.
+
 ## Introspection
 
 ### Changes to the `data.json` File
