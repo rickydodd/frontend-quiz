@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 import { Quiz, Questions } from "@/app/types";
@@ -161,12 +162,12 @@ export default function QuizForm({ quiz }: QuizFormProps) {
               </p>
             </div>
           </div>
-          <a
+          <Link
             className="mt-3 block w-full rounded-xl bg-purple py-5 text-center text-md font-medium"
             href="/"
           >
             Play Again
-          </a>
+          </Link>
         </>
       ) : (
         <>

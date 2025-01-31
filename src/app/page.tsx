@@ -1,5 +1,7 @@
 import { promises as fs } from "fs";
 
+import Link from "next/link";
+
 import { Quiz } from "@/app/types";
 
 export default async function Home() {
@@ -23,7 +25,7 @@ export default async function Home() {
         </p>
         <nav className="mt-10 font-medium" aria-label="Quiz subjects">
           {data.quizzes.map((quiz: Quiz) => (
-            <a
+            <Link
               href={`/quiz/${quiz.title.toLowerCase()}`}
               key={quiz.title}
               className="mt-3 flex items-center gap-4 rounded-2xl bg-option px-3 py-2"
@@ -40,7 +42,7 @@ export default async function Home() {
                 />
               </div>
               {quiz.title}
-            </a>
+            </Link>
           ))}
         </nav>
       </main>
